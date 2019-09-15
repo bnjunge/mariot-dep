@@ -1,0 +1,21 @@
+{
+    "name": "njunge/mariot",
+    "description": "\"A PHP tool that helps in database ops abstraction\"",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bneson Njunge",
+            "email": "ben@survtechnologies.co.ke"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^7.0.0"
+    },
+    "autoload": {
+        "psr-4":{
+            "SurvTech\\Bnjunge\\Mariot\\": "src/"
+        }
+    }
+
+}
