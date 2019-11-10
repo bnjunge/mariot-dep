@@ -20,7 +20,7 @@
     "repositories":[
         {
             "type": "vcs",
-            "url": "git@github.com:barryvanveen/secret.git"
+            "url": "git@github.com:bnjunge/mariot-dep.git"
         }
     ]
 
