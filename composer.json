@@ -16,6 +16,12 @@
         "psr-4":{
             "SurvTech\\Bnjunge\\Mariot\\": "src/"
         }
-    }
+    },
+    "repositories":[
+        {
+            "type": "vcs",
+            "url": "git@github.com:barryvanveen/secret.git"
+        }
+    ]
 
 }
