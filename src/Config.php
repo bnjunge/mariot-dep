@@ -27,4 +27,21 @@ class Config{
             // echo $e->getMessage();
         }
     }
+
+    /**
+     * Create Table
+     *
+     * @param String $query
+     * @return void
+     */
+    public function create_table($query)
+    {
+        try {
+            $createQuery = $this->con->prepare($query);
+            $createQuery->execute();
+            return ['Code' => 1, 'MsgClass' => 'success', 'Message' => 'Table created'];
+        } catch (\PDOException $e) {
+            return ['Code' => $e->getCode(),  'MsgClass' => 'dbError', 'Message' => $e->getMessage()];
+        }
+    }
 }
