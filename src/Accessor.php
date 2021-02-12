@@ -15,7 +15,6 @@ class Accessor{
      * @uses mariot
      */
     public $select;
-    public $mpesa;
 
     public function __construct()
     {

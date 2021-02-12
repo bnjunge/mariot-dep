@@ -61,6 +61,8 @@ $usersTable->->string('role')->notNull()->default("user");
 $usersTable>int('is_active')->notNull()->default(1);
 $usersTable->create();
 
+// finally create table
+$create_table = $mariotApi->db->create_table($usersTable->sqlLang);
 
 ```
 
